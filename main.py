@@ -7,7 +7,7 @@ def notifyMe(title, message):
     notification.notify(
         title = title,
         message = message,
-        app_icon = "C:\\Users\\bhagi\\PycharmProjects\\COVID-19 Notify\\icon.ico",
+        app_icon = "/* Add Path */",
         timeout = 6
     )
 
@@ -18,7 +18,6 @@ def getData(url):
 
 if __name__ == "__main__":
     while True:
-        # notifyMe("Bhagirath","Lets Stop the Spread of this Virus together")
         HtmlData = getData('https://www.mohfw.gov.in/')
 
         soup = BeautifulSoup(HtmlData, 'html.parser')
@@ -30,7 +29,7 @@ if __name__ == "__main__":
         DataStr = DataStr[1:]
         itemList = DataStr.split('\n\n')
 
-        states = ['Gujarat']
+        states = ['Gujarat','Delhi','Maharashtra','Rajasthan','Punjab']
         for item in itemList[0:35]: 
             dataList = item.split('\n')
 
