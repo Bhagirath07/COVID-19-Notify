@@ -1,5 +1,5 @@
 """
-Created on Fri July 05 2020
+Created on Sun July 05 2020
 @author: BhagiraTh Desani
 @discription: Provides Notification For Coronavirus(COVID-19) Cases Information as well as your computer will keep notifying you from time to time.
 
